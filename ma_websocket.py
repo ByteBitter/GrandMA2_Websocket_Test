@@ -11,10 +11,10 @@ class ma_websocket(object):
         self.session = 0
         print("Created Connection")
         print(self.ws.recv())
-        message = '{"session":' + str(self.session) + '}'
-        self.ws.send(message)
-        resp = json.loads(self.ws.recv())
-        self.session = resp["session"]
+        message = '{"session":' + str(self.session) + '}'   #
+        self.ws.send(message)                               # Get a valid websocket session id
+        resp = json.loads(self.ws.recv())                   #
+        self.session = resp["session"]                      #
         print("session: " +  str(self.session))
         self.active_attributes = []
 
