@@ -1,0 +1,938 @@
+
+
+SET_BUTTON_STATE
+{"requestType":"playbacks_userInput","cmdline":"","execIndex":101,"pageIndex":0,"buttonId":0,"pressed":false,"released":true,"type":0,"session":2,"maxRequests":0}
+
+
+SET_FADER
+{"requestType":"playbacks_userInput","execIndex":3,"pageIndex":0,"faderValue":0.46255506607929514,"type":1,"session":3,"maxRequests":0}
+
+
+COMMAND
+{"command":"test","session":3,"requestType":"command","maxRequests":0}
+
+
+
+GET_FADERS
+{"requestType":"playbacks","startIndex":[0],"itemsCount":[10],"pageIndex":0,"itemsType":[2],"view":2,"execButtonViewMode":1,"buttonsViewMode":0,"session":4,"maxRequests":1}
+
+RESPONSE:
+{
+    "realtime": false,
+    "responseType": "playbacks",
+    "responseSubType": 2,
+    "iPage": 1,
+    "itemGroups": [{
+        "itemsType": 2,
+        "cntPages": 10000,
+        "items": [
+            [{
+                "i": {
+                    "t": "16",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": "HT",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "3",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "MAIN_MIX",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#FFFF80",
+                "cues": {
+                    "bC": "#3F3F20",
+                    "items": [{
+                        "t": "    1 Cue",
+                        "c": "#FFFFFF",
+                        "pgs": {
+                            "v": 1.000,
+                            "bC": "#0000FF"
+                        }
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 15,
+                "isRun": 1,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Go",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#FFFF80",
+                        "tt": "HTP",
+                        "v": 1.000,
+                        "vT": "100%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Top",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "17",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": "HT",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "4",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "CONTENT",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#FFFF80",
+                "cues": {
+                    "bC": "#3F3F20",
+                    "items": [{
+                        "t": "    1 Cue",
+                        "c": "#FFFFFF",
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 16,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Go",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#FFFF80",
+                        "tt": "HTP",
+                        "v": 0.000,
+                        "vT": "00%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Top",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "18",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": "HT",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "5",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "LOGO",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#FFFF80",
+                "cues": {
+                    "bC": "#3F3F20",
+                    "items": [{
+                        "t": "    1 Cue",
+                        "c": "#FFFFFF",
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 17,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Go",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#FFFF80",
+                        "tt": "HTP",
+                        "v": 0.000,
+                        "vT": "00%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Top",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "19",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": "HT",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "6",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "LIVE",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#FFFF80",
+                "cues": {
+                    "bC": "#3F3F20",
+                    "items": [{
+                        "t": "    1 Cue",
+                        "c": "#FFFFFF",
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 18,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Go",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#FFFF80",
+                        "tt": "HTP",
+                        "v": 0.000,
+                        "vT": "00%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Top",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "20",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": "HT",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "12",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "MONOCHROM",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#FFFF80",
+                "cues": {
+                    "bC": "#3F3F20",
+                    "items": [{
+                        "t": "    1 Cue",
+                        "c": "#FFFFFF",
+                        "pgs": {
+                            "v": 1.000,
+                            "bC": "#0000FF"
+                        }
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 19,
+                "isRun": 1,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Go",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "On",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#FFFF80",
+                        "tt": "HTP",
+                        "v": 1.000,
+                        "vT": "100%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Off",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#FFFF80",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }],
+            [{
+                "i": {
+                    "t": "21",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": " P",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "1",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "ShapeShifter Base",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#E8A901",
+                "cues": {
+                    "bC": "#3A2A00",
+                    "items": [{
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 20,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Black",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#E8A901",
+                        "tt": "Mstr",
+                        "v": 1.000,
+                        "vT": "100%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "SelFix",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "22",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": " P",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "7",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "HausWash",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#E8A901",
+                "cues": {
+                    "bC": "#3A2A00",
+                    "items": [{
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 21,
+                "isRun": 1,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Black",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#E8A901",
+                        "tt": "Mstr",
+                        "v": 0.424,
+                        "vT": "42%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "SelFix",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "23",
+                    "c": "#C0C0C0"
+                },
+                "oType": {
+                    "t": " P",
+                    "c": "#FFFFFF"
+                },
+                "oI": {
+                    "t": "16",
+                    "c": "#FFFFFF"
+                },
+                "tt": {
+                    "t": "Mythos",
+                    "c": "#FFFFFF"
+                },
+                "bC": "#000000",
+                "bdC": "#E8A901",
+                "cues": {
+                    "bC": "#3A2A00",
+                    "items": [{
+                        "pgs": {}
+                    }]
+                },
+                "combinedItems": 1,
+                "iExec": 22,
+                "isRun": 1,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Flash",
+                        "s": false,
+                        "c": "#FFFF00",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Black",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "bdC": "#E8A901",
+                        "tt": "Mstr",
+                        "v": 0.584,
+                        "vT": "58%",
+                        "min": 0.000,
+                        "max": 1.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "SelFix",
+                        "s": false,
+                        "c": "#FFFFFF",
+                        "bdC": "#E8A901",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "24",
+                    "c": "#000000"
+                },
+                "oType": {
+                    "t": ""
+                },
+                "oI": {
+                    "t": ""
+                },
+                "tt": {
+                    "t": ""
+                },
+                "bC": "#404040",
+                "bdC": "#3D3D3D",
+                "cues": {},
+                "combinedItems": 1,
+                "iExec": 23,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "v": 0.000,
+                        "min": 0.000,
+                        "max": 0.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }, {
+                "i": {
+                    "t": "25",
+                    "c": "#000000"
+                },
+                "oType": {
+                    "t": ""
+                },
+                "oI": {
+                    "t": ""
+                },
+                "tt": {
+                    "t": ""
+                },
+                "bC": "#404040",
+                "bdC": "#3D3D3D",
+                "cues": {},
+                "combinedItems": 1,
+                "iExec": 24,
+                "isRun": 0,
+                "executorBlocks": [{
+                    "button1": {
+                        "id": 0,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "button2": {
+                        "id": 1,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    },
+                    "fader": {
+                        "v": 0.000,
+                        "min": 0.000,
+                        "max": 0.000
+                    },
+                    "button3": {
+                        "id": 2,
+                        "t": "Empty",
+                        "s": false,
+                        "c": "#808080",
+                        "leftLED": {},
+                        "rightLED": {}
+                    }
+                }]
+            }]
+        ]
+    }],
+    "worldIndex": 0
+}
+
+
+GET_PRESET_TYPE
+
+{"requestType":"presetTypes","type":"update","session":3,"maxRequests":1}
+
+RESPONSE:
+
+{
+    "realtime": false,
+    "responseType": "presetTypes",
+    "type": "update",
+    "pre": [{
+        "s": false,
+        "fea": [{
+            "np": "Dimmer",
+            "s": false,
+            "att": [{
+                "np": "Dim",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0,
+                "t": "open",
+                "c": "#C0C0C0",
+                "bC": "#000030"
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": false,
+        "fea": [{
+            "np": "Position",
+            "s": false,
+            "att": [{
+                "np": "Pan",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "Tilt",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "Blink",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": false,
+        "fea": [{
+            "np": "Gobo1",
+            "s": false,
+            "att": [{
+                "np": "G1",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }, {
+            "np": "Gobo2",
+            "s": false,
+            "att": [{
+                "np": "G2",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "G2<>",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": false,
+        "fea": [{
+            "np": "Color1",
+            "s": false,
+            "att": [{
+                "np": "C1",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }, {
+            "np": "Color2",
+            "s": false,
+            "att": [{
+                "np": "C2",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": false,
+        "fea": [{
+            "np": "Shutter",
+            "s": false,
+            "att": [{
+                "np": "Shutter",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }, {
+            "np": "Beam",
+            "s": false,
+            "att": [{
+                "np": "Iris",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }, {
+            "np": "Effect",
+            "s": false,
+            "att": [{
+                "np": "Effect<>",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "E",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": false,
+        "fea": [{
+            "np": "Focus",
+            "s": false,
+            "att": [{
+                "np": "Focus",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "Zoom",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }, {
+        "s": true,
+        "fea": [{
+            "np": "Lamp",
+            "s": true,
+            "att": [{
+                "np": "LampControl",
+                "a": 0,
+                "s": true,
+                "encoder_resolution": 0,
+                "t": "0.0",
+                "c": "#606060",
+                "bC": "#000030"
+            }],
+            "a": 0
+        }, {
+            "np": "Mspeed",
+            "s": false,
+            "att": [{
+                "np": "ColorMix",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "Gobo1WheelSelect",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }, {
+                "np": "Position",
+                "a": 0,
+                "s": false,
+                "encoder_resolution": 0
+            }],
+            "a": 0
+        }],
+        "a": 0
+    }],
+    "worldIndex": 0
+}
+
+
+GET_WHEELS
+{"requestType":"presetTypeList","session":3,"maxRequests":1}
+
+{
+    "realtime": false,
+    "responseType": "presetTypeList",
+    "pre": [{
+        "i": 1,
+        "n": "DIMMER",
+        "np": "Dimmer",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 2,
+        "n": "POSITION",
+        "np": "Position",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 3,
+        "n": "GOBO",
+        "np": "Gobo",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 4,
+        "n": "COLOR",
+        "np": "Color",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 5,
+        "n": "BEAM",
+        "np": "Beam",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 6,
+        "n": "FOCUS",
+        "np": "Focus",
+        "s": false,
+        "a": 0
+    }, {
+        "i": 7,
+        "n": "CONTROL",
+        "np": "Control",
+        "s": true,
+        "a": 0
+    }],
+    "worldIndex": 0
+}
+
+SET GET_WHEEL:
+
+{"requestType":"encoder","name":"PAN","value":6.670383165829146,"session":3,"maxRequests":0}
+
+
+Change_Active_Atribute:
+
+{"command":"Att PAN","session":3,"requestType":"command","maxRequests":0}
