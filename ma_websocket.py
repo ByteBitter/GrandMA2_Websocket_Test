@@ -37,7 +37,7 @@ class ma_websocket(object):
     def keep_alive(self):
         print("Keep Alive")
         self.ws.send(f'{{"session":{self.session}}}' )
-        #print(self.ws.recv())
+        self.ws.recv()
     #                                                            exec      on/off name    Color   function
     #returns an array of 50 buttons for the specified page, 50x ['101', 'LT', 1, 'Sequ', '#FFFFFF', 'Go']
     def playbacks(self, page):
