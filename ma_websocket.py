@@ -1,5 +1,4 @@
 from websocket import create_connection
-import socket
 import json
 
 class ma_websocket(object):
@@ -8,8 +7,7 @@ class ma_websocket(object):
         self.uri = uri
         self.user = login
         self.pw = pw
-        self.ws = create_connection(uri, timeout = 40)
-        self.ws.sock.ioctl(socket.SIO_KEEPALIVE_VALS, (1, 10000, 3000))
+        self.ws = create_connection(uri, timeout = 40) 
         self.session = 0
         print("Created Connection")
         print(self.ws.recv())
@@ -26,6 +24,7 @@ class ma_websocket(object):
         return(self.ws.recv())
 
 
+    #page: current executor page - 1 ;button: Executor Number (101); state: 1 or 0; id: 0, 1 or 2 (Button 1, 2 or 3) 
     def set_button(self, page, button, state, id):
         if state == 1:
             message = '{"requestType":"playbacks_userInput","cmdline":"","execIndex":' + str(button - 1) + ',"pageIndex":' + str(page) + ',"buttonId":' + str(id) + ',"pressed":true,"released":false,"type":0,"session":'+str(self.session)+',"maxRequests":0}'
@@ -34,12 +33,13 @@ class ma_websocket(object):
 
         self.ws.send(message)
         data = self.ws.recv()
-
+        
     def keep_alive(self):
         print("Keep Alive")
         self.ws.send(f'{{"session":{self.session}}}' )
-        print(self.ws.recv())
-
+        #print(self.ws.recv())
+    #                                                            exec      on/off name    Color   function
+    #returns an array of 50 buttons for the specified page, 50x ['101', 'LT', 1, 'Sequ', '#FFFFFF', 'Go']
     def playbacks(self, page):
         message = '{"requestType":"playbacks","startIndex":[0],"itemsCount":[50],"pageIndex":' + str(page) + ',"itemsType":[3],"view":3,"execButtonViewMode":2,"buttonsViewMode":0,"session":' + str(self.session) + ',"maxRequests":1}'
         self.ws.send(message)
@@ -74,6 +74,7 @@ class ma_websocket(object):
             print(raw)
             return None
 
+    # returns the values for the faders 16 - 25
     def playback_fader(self, page):
         self.ws.send(f'{{"requestType":"playbacks","startIndex":[15],"itemsCount":[10],"pageIndex":{page},"itemsType":[2],"view":2,"execButtonViewMode":1,"buttonsViewMode":0,"session":{self.session},"maxRequests":1}}' )
         raw = self.ws.recv()
@@ -88,7 +89,8 @@ class ma_websocket(object):
         except:
             print(raw)
             return None
-
+        
+    # set a fader value
     def set_fader(self, page, id, value):
         fVal = value / 127.0
         mssg = '{"requestType":"playbacks_userInput","execIndex":' + str(id) + ',"pageIndex":' + str(page) + ',"faderValue":' + str(fVal) + ',"type":1,"session":' + str(self.session) + ',"maxRequests":0}'
